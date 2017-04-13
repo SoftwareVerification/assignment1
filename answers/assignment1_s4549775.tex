@@ -17,10 +17,15 @@
 \section{} %1
 \begin{enumerate}[a]
 	\item %a
+	Holds because every node in the graph has a path to $\{a\}$.
 	\item %b
+	Does not hold because 3, 4, and 5 are a SCC (strongly connected component) and $\{a\} \not \in 3$.
 	\item %c
+	Does not hold. Conterexample: $\varnothing, \{b\}, \{a, c\}, \{a, c\}, \{a, c\}, \dots$
 	\item %d
+	Holds because at 1 we have two choices: 2, 3. If we take 2 the property holds trivially. If we chose 3 the property also holds trivially.
 	\item %e
+	Does not hold. Conterexample: $\varnothing, \{b\}, \{b\}, \{b\}, \dots$
 	\item %f
 	\item %g
 	\item %h
