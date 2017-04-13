@@ -55,6 +55,11 @@
 
 	I am not sure if this is useful, because $\square \bigcirc (A_{S0} \lor A_{S1} \lor A_{R0} \lor A_{R1}) = \square \bigcirc True = True$ so it does not really do anything. But on the other hand that is also kind of what the rule "A can always send." does: nothing. This sentence is a NOP so is the formula.
 	\item %i
+	$\square ((A_{S0} \rightarrow (\lnot B_{R0} \lor B_{R0})) \land (A_{S1} \rightarrow (\lnot B_{R1} \lor B_{R1})))$
+
+	This has the same problem: $\square ((A_{S0} \rightarrow (\lnot B_{R0} \lor B_{R0})) \land (A_{S1} \rightarrow (\lnot B_{R1} \lor B_{R1}))) = \square ((A_{S0} \rightarrow True) \land (A_{S1} \rightarrow True)) = \square (True \land True) = \square True = True$ so it does not really do anything. On the other hand as with (h) this is also true for the sentence this was derived from. "if A sends, B may or may not receive" has no declarative value so it matched the formula. The sentence has the form $A \rightarrow B \lor \lnot B = A \rightarrow True = True$.
+
+	To me it makes sense to derive NOP formulas from NOP sentences.
 \end{enumerate}
 
 \end{document}
