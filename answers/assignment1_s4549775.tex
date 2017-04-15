@@ -36,6 +36,15 @@
 	\item %a
 	$\diamond \square \phi \neq \square \diamond \phi$ because $\{a\} \varnothing \{a\} \varnothing \{a\} \varnothing \dots$ satisfies $\square \diamond \phi$ but not $\diamond \square \phi$.
 	\item %b
+	$\bigcirc \diamond \phi = \diamond \bigcirc \phi$ because
+
+	$\sigma \models \bigcirc \diamond \phi\\
+	\Leftrightarrow \sigma[1..] \models \diamond \phi\\
+	\Leftrightarrow \exists j \geq 0 (\sigma[1..][j..] \models \phi)\\
+	\Leftrightarrow \exists j \geq 0 (\sigma[j+1..] \models \phi)\\
+	\Leftrightarrow \exists j \geq 0 (\sigma[j..][1..] \models \phi)\\
+	\Leftrightarrow \exists j \geq 0 (\sigma[j..] \models \bigcirc \phi)\\
+	\Leftrightarrow \sigma \models \diamond \bigcirc \phi$
 	\item %c
 	\item %d
 \end{enumerate}
