@@ -46,6 +46,12 @@
 	\Leftrightarrow \exists j \geq 0 (\sigma[j..] \models \bigcirc \phi)\\
 	\Leftrightarrow \sigma \models \diamond \bigcirc \phi$
 	\item %c
+	$\diamond \phi \lor \diamond \psi = \diamond (\phi \lor \psi)$ because
+
+	$\sigma \models \diamond \phi \lor \diamond \psi\\
+	\Leftrightarrow \exists j \geq 0 (\sigma[j..] \models \phi) \lor \exists j \geq 0 (\sigma[j..] \models \psi)\\
+	\Leftrightarrow \exists j \geq 0 (\sigma[j..] \models \phi \lor \psi)\\
+	\Leftrightarrow \sigma \models \diamond (\phi \lor \psi)$
 	\item %d
 \end{enumerate}
 
